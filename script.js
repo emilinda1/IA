@@ -4,7 +4,7 @@ const caixaAlternativas = document.querySelector(".caixa-alternativas");
 const caixaResultado = document.querySelector(".caixa-resultado");
 const textoResultado = document.querySelector(".texto-resultado");
 
-cconst perguntas = [
+const perguntas = [
   {
     enunciado:
       "Assim que saiu da escola voce se depara com uma nova tecnologia, um chat que consegue responder todas as duvidas que uma pessoa pode ter, ele tambem gera imagens e áudios hiper-realistas. Qual o primeiro pensamento?",
