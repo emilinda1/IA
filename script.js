@@ -67,19 +67,27 @@ const perguntas = [
      {
      texto: "O chat pode ser uma tecnologia muito avancada, mas e preciso manter a atencao pois toda maquina erra, por isso revisar o trabalho e contribuir com as perspectivas pessoais é essencial.",
       afirmacao: "afirmacao"
-    },
-  ]
-},   
- 
-      isso revisar o trabalho e contribuir com as perspectivas pessoais é essencial.",
-    ],
+       }
+     ]
+   },   
+ ],
 
-let atual = 0;
+
+ let atual = 0;
 let perguntaAtual;
 
 function mostraPergunta() {
   perguntaAtual = perguntas[atual];
   caixaPerguntas.textContent = perguntaAtual.enunciado;
+  mostraPergunta();
 }
 
-mostraPergunta();
+function mostraAlternativas() {
+  for (const alternativa of perguntaAtual.alternativas) {
+    const botaoAlternativas = document.createElement("button");
+    botaoAlternativas.textContent = alternativa;
+    
+    
+    caixaAlternativas.appendChild(botaoAlternativas);
+  }
+}
